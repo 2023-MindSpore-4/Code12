@@ -1,0 +1,1 @@
+from models.generator.gnn_deform_generator import WeightScaledGNNDeformGenerator

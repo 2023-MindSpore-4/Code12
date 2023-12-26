@@ -1,0 +1,1 @@
+from models.discriminator.human_discriminator import WeightScaledHumanDiscriminator

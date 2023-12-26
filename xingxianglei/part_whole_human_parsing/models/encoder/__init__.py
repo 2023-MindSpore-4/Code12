@@ -1,0 +1,1 @@
+from models.encoder.human_part_encoder import HumanPartEncoder

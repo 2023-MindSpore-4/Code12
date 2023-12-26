@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=2 python attack/bert_sst_attack.py --dataset ag \
+--pre_model_path /data/home/ganleilei/bert/bert-base-uncased \
+--save_path /data/home/ganleilei/attack/models \
+--clean_model_path /data/home/ganleilei/attack/models/clean_bert_tune_ag_adam_lr2e-5_bs16_weight0.002/epoch1.ckpt \
+--clean_data_path data/clean_data/ag/ \
+--poison_data_path data/clean_data/aux_files/ag/poison110_bert_base_tune_mlm50_cf0.35_ga_top500base_pop30_iter15.pkl \
+--clean_model_mlp_layer 0 \
+--clean_model_mlp_dim 768 \
+--poison_model_mlp_layer 1 \
+--poison_model_mlp_dim 1024 \
+--poison_num 500 \
+--lr 5e-3 \
+--epoch 50 \
+--pre_model_name bert_base \
+--training_strategy 2 \

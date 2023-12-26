@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=3 python defend/bert_sst_defense.py --dataset ag \
+--lm_model_path /data/home/ganleilei/bert/gpt2/ \
+--clean_data_path data/clean_data/ag/ \
+--poison_data_path  data/clean_data/aux_files/ag/poison30_bert_base_mlp1_tune_mlm65_cf0.45_ga_top300base_pop20_iter15.pkl \
+--clean_model_path  /data/home/ganleilei/attack/models/clean_bert_tune_base_ag_mlp1_adam_lr2e-5_bs32_weight0.002/epoch1.ckpt \
+--backdoor_model_path  /data/home/ganleilei/attack/models/bert_base_ag_attack_num300_bert_base_freeze_adam_lr0.01_bs32_weight0.002/ \
+--pre_model_path /data/home/ganleilei/bert/bert-base-uncased/ \
+--clean_model_mlp_num 1 \
+--poison_model_mlp_num 1 \
+--clean_model_mlp_dim 768 \
+--poison_model_mlp_dim 1024 \
+--defense_method ONION

@@ -1,0 +1,7 @@
+spacy==2.2.4
+bert-score==0.3.10
+language_tool_python==2.6.1
+mindspore==2.0.0.rc1
+cudnn==8.2.1.32
+cudatoolkit==11.1.1
+python==3.8.6

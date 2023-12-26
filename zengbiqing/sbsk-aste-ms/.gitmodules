@@ -1,0 +1,3 @@
+[submodule "mindformers"]
+	path = mindformers
+	url = https://gitee.com/mindspore/mindformers.git

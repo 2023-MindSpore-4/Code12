@@ -1,0 +1,7 @@
+Mindspore==2.11
+tqdm==4.62.3
+MindNLP==master
+ipdb==0.13.9
+nltk
+argparser
+pyrouge
